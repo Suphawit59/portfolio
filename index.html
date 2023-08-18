@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+    <script src="https://kit.fontawesome.com/6843eb44d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js" integrity="sha512-fMPPLjF/Xr7Ga0679WgtqoSyfUoQgdt8IIxJymStR5zV3Fyb6B3u/8DcaZ6R6sXexk5Z64bCgo2TYyn760EdcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <hr>
+    <h1>PORTFOLIO</h1>
+    <hr>
+    <div class="container">
+        <img class="logo" src="IMG_3814.JPG" alt="">
+        <h2 class="name">SUPHAWIT CHREDCHUTUM</h2>
+        <span class="slogan">"พึ่งรู้ว่ายูทูปมีเพลงรักด้วย คิดว่ามีแต่เพลงเศร้า"</span>
+        <div class="social-img">
+            <ul>
+                <li><a href="#" target="_blank"></a><i class="fa fa-brands fa-instagram"></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-line"></i></li>
+                <li><a href="#" target="_blank"></a><i class="fa-brands fa-facebook"></i></li>
+            </ul>
+            <p class="bio">
+              Name:Suphawit Cherdchutum <br>
+              Nickname:Pe <br>
+              Birtday:July  26, 2003 <br>
+              Nationality:Thai <br>
+              Religion:Buddhist <br>
+              Height:177 <br>
+              Weight:96
+            </p>
+        </div>
+    </div>
+<hr>
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Game', 'movie', 'study'],
+      datasets: [{
+        label: '# of Votes',
+        data: [8, 5, 6],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+  
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Games', 'Movie', 'Write code', ],
+        datasets: [{
+          label: 'hour',
+          data: [2, 7, 3],
+          borderWidth: 7
+        }]
+      },
+    });
+  </script>
+
+<hr>
+
+<div class="footer">
+    Suphawit Cherdchutum &copy;
+    <script>
+        document.write(new Data().getFullYear())
+    </script>.Portfolio by Suphawit
+</div>
+
+</body>
+</html>
